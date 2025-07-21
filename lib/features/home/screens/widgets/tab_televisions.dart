@@ -1,5 +1,6 @@
 import 'dart:ui' show ImageFilter;
 
+import 'package:bloc_app_template/widgets/app_gap.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:bloc_app_template/features/tv/screens/blocs/tv_ota_cubit.dart';
@@ -9,7 +10,6 @@ import 'package:bloc_app_template/features/tv/screens/widgets/tv_popular_view.da
 import 'package:bloc_app_template/features/utilities/poster_value_controller.dart';
 import 'package:bloc_app_template/utilities/context_extensions.dart';
 import 'package:bloc_app_template/utilities/ui_utils.dart';
-import 'package:bloc_app_template/widgets/kai_gap.dart';
 
 class TelevisionsTab extends StatefulWidget {
   const TelevisionsTab({super.key});
@@ -59,7 +59,7 @@ class _TelevisionsTabState extends State<TelevisionsTab>
                     OnTheAirTvsView(
                       // posterValueController: _posterValueController,
                     ),
-                    KaiGap.s40,
+                    AppGap.s40,
                     PopularTvsView(),
                   ],
                 ),

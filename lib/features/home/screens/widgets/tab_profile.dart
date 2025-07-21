@@ -34,7 +34,7 @@ class _ProfileTabState extends State<ProfileTab>
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(64),
                   image: DecorationImage(
-                    image: KaiAssets.logo.appLogo.image().image,
+                    image: AppAssets.logo.appLogo.image().image,
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -50,7 +50,7 @@ class _ProfileTabState extends State<ProfileTab>
             ),
             const SizedBox(height: 5),
             const Text(
-              'Kai Movies',
+              'App Movies',
               style: TextStyle(
                 color: Colors.grey,
                 fontSize: 13,

@@ -6,7 +6,7 @@ import 'package:bloc_app_template/features/home/screens/pages/home_page.dart';
 import 'package:bloc_app_template/features/movie/screens/pages/movie_detail_page.dart';
 import 'package:bloc_app_template/features/tv/screens/pages/tv_detail_page.dart';
 
-part 'kai_router.g.dart';
+part 'app_router.g.dart';
 
 @TypedGoRoute<HomeRoute>(
   path: '/',

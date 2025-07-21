@@ -1,3 +1,4 @@
+import 'package:bloc_app_template/widgets/app_gap.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_card_swiper/flutter_card_swiper.dart';
@@ -8,7 +9,6 @@ import 'package:bloc_app_template/repositories/network/utilities/api_utils.dart'
 import 'package:bloc_app_template/utilities/context_extensions.dart';
 import 'package:bloc_app_template/utilities/injector.dart';
 import 'package:bloc_app_template/utilities/ui_utils.dart';
-import 'package:bloc_app_template/widgets/kai_gap.dart';
 
 const double titleHeight = 30.0;
 const EdgeInsets padding = EdgeInsets.symmetric(
@@ -16,8 +16,8 @@ const EdgeInsets padding = EdgeInsets.symmetric(
   vertical: 15.0,
 );
 
-class KaiCardSwiper extends StatelessWidget {
-  const KaiCardSwiper({
+class AppCardSwiper extends StatelessWidget {
+  const AppCardSwiper({
     super.key,
     this.title,
     required this.data,
@@ -43,7 +43,7 @@ class KaiCardSwiper extends StatelessWidget {
             boxShadow: cardShadow,
           ),
         ),
-        KaiGap.s10,
+        AppGap.s10,
         SizedBox(
           width: double.infinity,
           height: context.screenSize.height / 2 + 15.0,
@@ -75,7 +75,7 @@ class KaiCardSwiper extends StatelessWidget {
                 shadows: textShadow),
           ),
         ),
-        KaiGap.s10,
+        AppGap.s10,
         SizedBox(
           width: double.infinity,
           height: context.screenSize.height / 2 + 15.0,

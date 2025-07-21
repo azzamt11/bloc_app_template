@@ -73,4 +73,4 @@ flutter_native_splash:
 flutter_gen:
   assets:
     outputs:
-      class_name: KaiAssets
+      class_name: AppAssets

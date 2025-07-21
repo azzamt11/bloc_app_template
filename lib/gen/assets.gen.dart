@@ -29,8 +29,8 @@ class $AssetsLogoGen {
   List<AssetGenImage> get values => [appLogo];
 }
 
-class KaiAssets {
-  KaiAssets._();
+class AppAssets {
+  AppAssets._();
 
   static const $AssetsImagesGen images = $AssetsImagesGen();
   static const $AssetsLogoGen logo = $AssetsLogoGen();

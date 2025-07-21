@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:bloc_app_template/common/router/kai_router.dart';
+import 'package:bloc_app_template/common/router/app_router.dart';
 import 'package:bloc_app_template/utilities/ui_utils.dart';
 
 final _router = GoRouter(routes: $appRoutes, debugLogDiagnostics: true);

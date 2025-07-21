@@ -1,10 +1,10 @@
+import 'package:bloc_app_template/widgets/app_card_swiper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:bloc_app_template/features/movie/screens/blocs/movie_now_playing_cubit.dart';
 import 'package:bloc_app_template/features/movie/screens/pages/movie_detail_page.dart';
 // import 'package:bloc_app_template/features/utilities/poster_value_controller.dart';
-import 'package:bloc_app_template/widgets/kai_card_swiper.dart';
 
 class NowPlayingMoviesView extends StatelessWidget {
   const NowPlayingMoviesView({
@@ -19,7 +19,7 @@ class NowPlayingMoviesView extends StatelessWidget {
     return BlocBuilder<MovieNowPlayingCubit, MovieNowPlayingState>(
       builder: (_, state) {
         if (state is SuccessMovieNowPlayingState) {
-          return KaiCardSwiper(
+          return AppCardSwiper(
             title: 'Now Playing',
             data: state.movies,
             // posterValueController: posterValueController,
@@ -27,7 +27,7 @@ class NowPlayingMoviesView extends StatelessWidget {
                 pathParameters: {'id': movie.id.toString()}),
           );
         }
-        return KaiCardSwiper.shimmer(context);
+        return AppCardSwiper.shimmer(context);
       },
     );
   }

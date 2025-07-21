@@ -1,5 +1,5 @@
+import 'package:bloc_app_template/widgets/app_gap.dart';
 import 'package:flutter/material.dart';
-import 'package:bloc_app_template/widgets/kai_gap.dart';
 
 class SectionTitleView extends StatelessWidget {
   const SectionTitleView({
@@ -29,7 +29,7 @@ class SectionTitleView extends StatelessWidget {
                   const TextStyle(fontSize: 19.0, fontWeight: FontWeight.bold),
             ),
           ),
-          KaiGap.s10,
+          AppGap.s10,
           content,
         ],
       ),

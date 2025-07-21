@@ -1,3 +1,4 @@
+import 'package:bloc_app_template/widgets/app_gap.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:bloc_app_template/models/show_detail.dart';
@@ -5,7 +6,6 @@ import 'package:bloc_app_template/repositories/cache/image_cache_manager.dart';
 import 'package:bloc_app_template/repositories/network/utilities/api_utils.dart';
 import 'package:bloc_app_template/utilities/injector.dart';
 import 'package:bloc_app_template/utilities/ui_utils.dart';
-import 'package:bloc_app_template/widgets/kai_gap.dart';
 
 class HeaderView extends StatelessWidget {
   const HeaderView(this.showDetail, {super.key});
@@ -44,7 +44,7 @@ class HeaderView extends StatelessWidget {
                       : null,
                 ),
               ),
-              KaiGap.s15,
+              AppGap.s15,
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -70,7 +70,7 @@ class HeaderView extends StatelessWidget {
                     //           color: Colors.white70),
                     //     ),
                     //   ),
-                    KaiGap.s10,
+                    AppGap.s10,
                     Row(
                       children: [
                         const Icon(
@@ -78,7 +78,7 @@ class HeaderView extends StatelessWidget {
                           color: Colors.amberAccent,
                           size: 18,
                         ),
-                        KaiGap.s5,
+                        AppGap.s5,
                         Text(
                           showDetail.voteAverage.toStringAsFixed(1),
                           style: const TextStyle(
@@ -94,7 +94,7 @@ class HeaderView extends StatelessWidget {
                               fontSize: 12.0,
                               color: Colors.white70),
                         ),
-                        KaiGap.s5,
+                        AppGap.s5,
                         Text(
                           '(${showDetail.voteCount} reviews)',
                           style: const TextStyle(
@@ -104,7 +104,7 @@ class HeaderView extends StatelessWidget {
                         ),
                       ],
                     ),
-                    KaiGap.s10,
+                    AppGap.s10,
                     SingleChildScrollView(
                       padding: EdgeInsets.zero,
                       child: Theme(
@@ -142,7 +142,7 @@ class HeaderView extends StatelessWidget {
               ),
             ],
           ),
-          KaiGap.s15,
+          AppGap.s15,
         ],
       ),
     );

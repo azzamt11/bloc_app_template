@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:bloc_app_template/features/tv/screens/blocs/tv_ota_cubit.dart';
 import 'package:bloc_app_template/features/tv/screens/pages/tv_detail_page.dart';
-import 'package:bloc_app_template/widgets/kai_card_swiper.dart';
+import 'package:bloc_app_template/widgets/app_card_swiper.dart';
 
 class OnTheAirTvsView extends StatelessWidget {
   const OnTheAirTvsView({
@@ -18,7 +18,7 @@ class OnTheAirTvsView extends StatelessWidget {
     return BlocBuilder<TvOnTheAirCubit, TvOnTheAirState>(
       builder: (_, state) {
         if (state is SuccessTvOnTheAirState) {
-          return KaiCardSwiper(
+          return AppCardSwiper(
             title: 'Tv On The Air',
             data: state.tvs,
             // posterValueController: posterValueController,
@@ -26,7 +26,7 @@ class OnTheAirTvsView extends StatelessWidget {
                 pathParameters: {'id': tv.id.toString()}),
           );
         }
-        return KaiCardSwiper.shimmer(context);
+        return AppCardSwiper.shimmer(context);
       },
     );
   }

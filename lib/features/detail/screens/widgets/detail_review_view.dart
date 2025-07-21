@@ -5,7 +5,7 @@ import 'package:bloc_app_template/repositories/network/utilities/api_utils.dart'
     show getImageUrl;
 import 'package:bloc_app_template/utilities/injector.dart';
 import 'package:bloc_app_template/utilities/ui_utils.dart';
-import 'package:bloc_app_template/widgets/kai_gap.dart';
+import 'package:bloc_app_template/widgets/app_gap.dart';
 import 'package:bloc_app_template/widgets/section_title_view.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
@@ -60,13 +60,13 @@ class ReviewsView extends StatelessWidget {
                                   cacheManager:
                                       injector.get<ImageUrlCacheManager>(),
                                 )
-                              : KaiAssets.images.icUser.image().image,
+                              : AppAssets.images.icUser.image().image,
                           fit: BoxFit.cover,
                         ),
                       ),
                     ),
                   ),
-                  KaiGap.s15,
+                  AppGap.s15,
                   Expanded(
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -76,7 +76,7 @@ class ReviewsView extends StatelessWidget {
                           style: const TextStyle(
                               fontSize: 15.0, fontWeight: FontWeight.bold),
                         ),
-                        KaiGap.s10,
+                        AppGap.s10,
                         Text(
                           reviews[index].content,
                           maxLines: 4,

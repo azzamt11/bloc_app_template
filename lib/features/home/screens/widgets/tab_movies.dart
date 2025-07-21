@@ -1,6 +1,7 @@
 import 'dart:ui' show ImageFilter;
 
 // import 'package:cached_network_image/cached_network_image.dart';
+import 'package:bloc_app_template/widgets/app_gap.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:bloc_app_template/features/movie/screens/blocs/movie_now_playing_cubit.dart';
@@ -12,7 +13,6 @@ import 'package:bloc_app_template/features/movie/screens/widgets/movie_upcoming_
 // import 'package:bloc_app_template/features/utilities/poster_value_controller.dart';
 import 'package:bloc_app_template/utilities/context_extensions.dart';
 import 'package:bloc_app_template/utilities/ui_utils.dart';
-import 'package:bloc_app_template/widgets/kai_gap.dart';
 import 'package:pull_to_refresh_flutter3/pull_to_refresh_flutter3.dart';
 
 class MoviesTab extends StatefulWidget {
@@ -84,9 +84,9 @@ class _MoviesTabState extends State<MoviesTab>
                         NowPlayingMoviesView(
                           // posterValueController: _posterValueController,
                         ),
-                        KaiGap.s40,
+                        AppGap.s40,
                         PopularMoviesView(),
-                        KaiGap.s15,
+                        AppGap.s15,
                         UpcomingMoviesView(),
                       ],
                     ),
