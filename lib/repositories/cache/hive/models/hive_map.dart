@@ -7,7 +7,6 @@ part 'hive_map.g.dart';
 
 @freezed
 class HiveMap with _$HiveMap {
-  @JsonSerializable(anyMap: true, checked: true)
   factory HiveMap({required Map<String, dynamic> data}) = _HiveMap;
 
   factory HiveMap.convert(Map<String, dynamic> json) =>

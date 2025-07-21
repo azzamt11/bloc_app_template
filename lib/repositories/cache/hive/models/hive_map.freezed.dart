@@ -109,6 +109,7 @@ class _$HiveMapImpl implements _HiveMap {
   }
 
   @override
+  // ignore: non_nullable_equals_parameter
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&

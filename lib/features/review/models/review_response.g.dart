@@ -14,8 +14,8 @@ ReviewResponse _$ReviewResponseFromJson(Map<String, dynamic> json) =>
           .toList(),
     );
 
-Map<String, dynamic> _$ReviewResponseToJson(ReviewResponse instance) =>
+/*Map<String, dynamic> _$ReviewResponseToJson(ReviewResponse instance) =>
     <String, dynamic>{
       'page': instance.page,
       'results': instance.reviews.map((e) => e.toJson()).toList(),
-    };
+    };*/

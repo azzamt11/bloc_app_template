@@ -14,8 +14,8 @@ MovieResponse _$MovieResponseFromJson(Map<String, dynamic> json) =>
           .toList(),
     );
 
-Map<String, dynamic> _$MovieResponseToJson(MovieResponse instance) =>
+/*Map<String, dynamic> _$MovieResponseToJson(MovieResponse instance) =>
     <String, dynamic>{
       'page': instance.page,
       'results': instance.movies.map((e) => e.toJson()).toList(),
-    };
+    };*/

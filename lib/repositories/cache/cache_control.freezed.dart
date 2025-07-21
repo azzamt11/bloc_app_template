@@ -124,6 +124,7 @@ class _$CacheControlImpl implements _CacheControl {
   }
 
   @override
+  // ignore: non_nullable_equals_parameter
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&

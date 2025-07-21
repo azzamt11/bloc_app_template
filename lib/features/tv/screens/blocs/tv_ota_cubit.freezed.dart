@@ -121,6 +121,7 @@ class _$InitialTvOnTheAirStateImpl implements InitialTvOnTheAirState {
   }
 
   @override
+  // ignore: non_nullable_equals_parameter
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
@@ -244,6 +245,7 @@ class _$LoadingTvOnTheAirStateImpl implements LoadingTvOnTheAirState {
   }
 
   @override
+  // ignore: non_nullable_equals_parameter
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
@@ -385,6 +387,7 @@ class _$SuccessTvOnTheAirStateImpl implements SuccessTvOnTheAirState {
   }
 
   @override
+  // ignore: non_nullable_equals_parameter
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
@@ -521,6 +524,7 @@ class _$EmptyTvOnTheAirStateImpl implements EmptyTvOnTheAirState {
   }
 
   @override
+  // ignore: non_nullable_equals_parameter
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
@@ -662,6 +666,7 @@ class _$FailureTvOnTheAirStateImpl implements FailureTvOnTheAirState {
   }
 
   @override
+  // ignore: non_nullable_equals_parameter
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&

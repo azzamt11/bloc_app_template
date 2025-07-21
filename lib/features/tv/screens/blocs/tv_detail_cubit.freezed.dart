@@ -119,6 +119,7 @@ class _$InitialTvDetailStateImpl implements InitialTvDetailState {
   }
 
   @override
+  // ignore: non_nullable_equals_parameter
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
@@ -240,6 +241,7 @@ class _$LoadingTvDetailStateImpl implements LoadingTvDetailState {
   }
 
   @override
+  // ignore: non_nullable_equals_parameter
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
@@ -379,6 +381,7 @@ class _$SuccessTvDetailStateImpl implements SuccessTvDetailState {
   }
 
   @override
+  // ignore: non_nullable_equals_parameter
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
@@ -515,6 +518,7 @@ class _$EmptyTvDetailStateImpl implements EmptyTvDetailState {
   }
 
   @override
+  // ignore: non_nullable_equals_parameter
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType && other is _$EmptyTvDetailStateImpl);
@@ -653,6 +657,7 @@ class _$FailureTvDetailStateImpl implements FailureTvDetailState {
   }
 
   @override
+  // ignore: non_nullable_equals_parameter
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&

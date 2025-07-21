@@ -120,6 +120,7 @@ class _$InitialTvPopularStateImpl implements InitialTvPopularState {
   }
 
   @override
+  // ignore: non_nullable_equals_parameter
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
@@ -242,6 +243,7 @@ class _$LoadingTvPopularStateImpl implements LoadingTvPopularState {
   }
 
   @override
+  // ignore: non_nullable_equals_parameter
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
@@ -382,6 +384,7 @@ class _$SuccessTvPopularStateImpl implements SuccessTvPopularState {
   }
 
   @override
+  // ignore: non_nullable_equals_parameter
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
@@ -518,6 +521,7 @@ class _$EmptyTvPopularStateImpl implements EmptyTvPopularState {
   }
 
   @override
+  // ignore: non_nullable_equals_parameter
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
@@ -658,6 +662,7 @@ class _$FailureTvPopularStateImpl implements FailureTvPopularState {
   }
 
   @override
+  // ignore: non_nullable_equals_parameter
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&

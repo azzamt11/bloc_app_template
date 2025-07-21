@@ -121,6 +121,7 @@ class _$InitialMovieDetailStateImpl implements InitialMovieDetailState {
   }
 
   @override
+  // ignore: non_nullable_equals_parameter
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
@@ -244,6 +245,7 @@ class _$LoadingMovieDetailStateImpl implements LoadingMovieDetailState {
   }
 
   @override
+  // ignore: non_nullable_equals_parameter
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
@@ -385,6 +387,7 @@ class _$SuccessMovieDetailStateImpl implements SuccessMovieDetailState {
   }
 
   @override
+  // ignore: non_nullable_equals_parameter
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
@@ -521,6 +524,7 @@ class _$EmptyMovieDetailStateImpl implements EmptyMovieDetailState {
   }
 
   @override
+  // ignore: non_nullable_equals_parameter
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
@@ -662,6 +666,7 @@ class _$FailureMovieDetailStateImpl implements FailureMovieDetailState {
   }
 
   @override
+  // ignore: non_nullable_equals_parameter
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
